@@ -11,8 +11,8 @@
 
 ## Setup and Usage
 *Clone the repository:*
-git clone https://github.com/
-cd plates-co-sales-system
+git clone https://github.com/ashrithashetty8/plates_co-leanscale-ashritha
+cd plates_co-leanscale-ashritha
 
 *Install Node.js* 
 Ensure that Node.js is installed. You can download and install it from https://nodejs.org/.
