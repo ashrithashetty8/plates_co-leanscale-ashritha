@@ -1,13 +1,13 @@
 ## Plates Co Sales System
-*This is a simple proof-of-concept for a sales system built using Node.js without any frameworks. The system allows users to add products to a basket, apply special offers, and calculate the total cost of their order, including delivery charges.*
+This is a simple proof-of-concept for a sales system built using Node.js without any frameworks. The system allows users to add products to a basket, apply special offers, and calculate the total cost of their order, including delivery charges.
 
 ## Features
-*Product Catalog: Three products (Red Plate, Green Plate, Blue Plate) with associated prices.*
-*Delivery Charges: Based on the total order value.*
-*Orders under $50: $4.95 delivery.*
-*Orders under $90: $2.95 delivery.*
-*Orders of $90 or more: Free delivery.*
-*Special Offers: The offer "Buy one Red Plate, get the second one at half price."*
+Product Catalog: Three products (Red Plate, Green Plate, Blue Plate) with associated prices.
+Delivery Charges: Based on the total order value.
+Orders under $50: $4.95 delivery.
+Orders under $90: $2.95 delivery.
+Orders of $90 or more: Free delivery.
+Special Offers: The offer "Buy one Red Plate, get the second one at half price."
 
 ## Setup and Usage
 *Clone the repository:*
