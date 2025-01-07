@@ -24,56 +24,54 @@ The server will now be running at http://localhost:3000.
 
 ## Endpoints
 
-1. GET /products
-Lists all available products in the catalogue.
+### 1. GET /products
+    Lists all available products in the catalogue.
 
-*Request Example:*
-GET : http://localhost:3000/products
+    *Request Example:*
+    GET : http://localhost:3000/products
 
-*Response Example:*
-{
-    "R01": { "code": "R01", "price": 32.95 },
-    "G01": { "code": "G01", "price": 24.95 },
-    "B01": { "code": "B01", "price": 7.95 }
-}
+    *Response Example:*
+    {
+        "R01": { "code": "R01", "price": 32.95 },
+        "G01": { "code": "G01", "price": 24.95 },
+        "B01": { "code": "B01", "price": 7.95 }
+    }
 
-2. POST /add
-Adds a product to the basket by providing the product code in the request body.
+### 2. POST /add
+    Adds a product to the basket by providing the product code in the request body.
 
-*Request Example:*
-POST : http://localhost:3000/add
-Content-Type: application/x-www-form-urlencoded
-productCode=R01
+    *Request Example:*
+    POST : http://localhost:3000/add
+    Content-Type: application/x-www-form-urlencoded
+    productCode=R01
 
-*Response Example:*
-{
-    "message": "Added R01 to the basket",
-    "basket": ["R01"]
-}
+    *Response Example:*
+    {
+        "message": "Added R01 to the basket",
+        "basket": ["R01"]
+    }
 
+### 3. GET /total
+    Calculates and returns the total cost of the basket, considering products, offers, and delivery charges.
 
-3. GET /total
-Calculates and returns the total cost of the basket, considering products, offers, and delivery charges.
+    *Request Example:*
+    GET : http://localhost:3000/total
 
-*Request Example:*
-GET : http://localhost:3000/total
+    *Response Example:*
+    {
+        "total": 32.95
+    }
 
-*Response Example:*
-{
-    "total": 32.95
-}
+### 4. POST /clear
+    Clears all items in the basket.
+    
+    *Request Example:*
+    POST : http://localhost:3000/clear
+    
+    *Response Example:*
+    {
+        "message": "Basket has been cleared"
+    }
 
-
-4. POST /clear
-Clears all items in the basket.
-
-*Request Example:*
-POST : http://localhost:3000/clear
-
-*Response Example:*
-{
-    "message": "Basket has been cleared"
-}
-
-# Testing the API
+## Testing the API
 *You can test the endpoints using tools like Postman.*
